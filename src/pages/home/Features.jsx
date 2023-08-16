@@ -8,7 +8,7 @@ const Features = () => {
   return (
     <div className="">
       <Container>
-        <div className="p-8 md:flex-row flex flex-col gap-20">
+        <div className="p-8 md:flex-row flex flex-col md:gap-5 gap-20">
           <FeatureCard icon={<FaTruckMonster />} />
           <FeatureCard icon={<LuPalmtree />} />
           <FeatureCard icon={<GiFarmer />} />

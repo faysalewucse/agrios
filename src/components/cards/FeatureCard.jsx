@@ -1,6 +1,6 @@
 const FeatureCard = ({ feature, description, icon }) => {
   return (
-    <div className="relative bg-white rounded-lg text-center p-10 shadow-lg">
+    <div className="relative bg-white rounded-lg text-center py-8 px-12 shadow-lg">
       <h5 className="font-cursive text-secondary">Feature</h5>
       <h6 className="w-1/2 mx-auto font-semibold mb-10">
         We're using a new technology{" "}
