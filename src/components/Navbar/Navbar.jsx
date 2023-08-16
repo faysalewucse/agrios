@@ -37,7 +37,7 @@ const Navbar = () => {
     <div className="relative">
       <div
         className={`md:hidden fixed top-0 right-0 translate-x-full h-screen transition-300 bg-dark2 z-50 p-10 ${
-          sidebarOpen ? "translate-x-0 w-[80vw]" : "w-0"
+          sidebarOpen && "-translate-x-0 w-[80vw]"
         }`}
       >
         {sidebarOpen && (
