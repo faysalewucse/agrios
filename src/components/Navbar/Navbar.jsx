@@ -19,6 +19,7 @@ import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useState } from "react";
 import SocialMedia from "../SocialMedia";
+import SliderText from "../SliderText";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -69,7 +70,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <div className="container mx-auto md:p-8 p-5 flex items-center md:justify-between justify-center">
+      <div className="max-w-7xl mx-auto md:p-8 p-5 flex items-center md:justify-between justify-center">
         <Brand />
         <div className="hidden md:block">
           <SocialMedia />
@@ -119,11 +120,14 @@ const Navbar = () => {
           className="mySwiper h-screen"
         >
           <SwiperSlide>
-            <img
-              className="brightness-50 h-[85vh] w-full object-cover"
-              src={slider1}
-              alt="slider1"
-            />
+            <div className="relative">
+              <img
+                className="brightness-50 h-[85vh] w-full object-cover"
+                src={slider1}
+                alt="slider1"
+              />
+              <SliderText />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
             <img
@@ -131,6 +135,7 @@ const Navbar = () => {
               src={slider2}
               alt="slider2"
             />
+            <SliderText />
           </SwiperSlide>
           <SwiperSlide>
             <img
@@ -138,6 +143,7 @@ const Navbar = () => {
               src={slider3}
               alt="slider3"
             />
+            <SliderText />
           </SwiperSlide>
         </Swiper>
       </div>

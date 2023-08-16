@@ -24,3 +24,7 @@
 .transition-300 {
   @apply transition-all duration-300;
 }
+
+.font-cursive {
+  font-family: "Covered By Your Grace", cursive;
+}
