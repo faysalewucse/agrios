@@ -15,22 +15,22 @@ const Services = () => {
           <ServiceCard
             image={service1}
             hover={"group/service1"}
-            afterHover={"group-hover/service1:mt-10"}
+            afterHover={"group-hover/service1:translate-y-10"}
           />
           <ServiceCard
             image={service2}
             hover={"group/service2"}
-            afterHover={"group-hover/service2:mt-10"}
+            afterHover={"group-hover/service2:translate-y-10"}
           />
           <ServiceCard
             image={service3}
             hover={"group/service3"}
-            afterHover={"group-hover/service3:mt-10"}
+            afterHover={"group-hover/service3:translate-y-10"}
           />
           <ServiceCard
             image={service4}
             hover={"group/service4"}
-            afterHover={"group-hover/service4:mt-10"}
+            afterHover={"group-hover/service4:translate-y-10"}
           />
         </div>
       </Container>
