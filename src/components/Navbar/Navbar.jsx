@@ -104,7 +104,12 @@ const Navbar = () => {
                 onClick={() => setSidebarOpen(!sidebarOpen)}
                 className="md:hidden cursor-pointer"
               />
-              <BsCart3 className="cursor-pointer" />
+              <div className="relative">
+                <BsCart3 className="cursor-pointer" />
+                <p className="absolute -top-1 -right-1 text-xs bg-primary text-white w-4 h-4 flex items-center justify-center rounded-full">
+                  1
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +122,7 @@ const Navbar = () => {
           }}
           navigation={true}
           modules={[EffectFade, Navigation, Pagination, Autoplay]}
-          className="mySwiper h-screen"
+          className="mySwiper h-[85vh]"
         >
           <SwiperSlide>
             <div className="relative">

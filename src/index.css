@@ -5,17 +5,6 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-.flex-center {
-  @apply flex items-center;
-}
-
-.flex-center-between {
-  @apply flex items-center justify-between;
-}
-
-.flex-center-center {
-  @apply flex items-center justify-center;
-}
 
 .transition-200 {
   @apply transition-all duration-200;
@@ -27,4 +16,27 @@
 
 .font-cursive {
   font-family: "Covered By Your Grace", cursive;
+}
+
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-5xl;
+}
+h3 {
+  @apply text-4xl;
+}
+h4 {
+  @apply text-3xl;
+}
+h5 {
+  @apply text-2xl;
+}
+h6 {
+  @apply text-xl;
+}
+
+small {
+  @apply text-xs;
 }

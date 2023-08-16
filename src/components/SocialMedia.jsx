@@ -8,7 +8,7 @@ import {
 
 const SocialMedia = () => {
   return (
-    <div className="flex-center gap-2">
+    <div className="flex items-center gap-2">
       <SocialMediaIcon>
         <RiTwitterFill />
       </SocialMediaIcon>
