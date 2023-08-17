@@ -1,6 +1,8 @@
 import Features from "./Features";
+import Info from "./Info";
 import Introductions from "./Introductions";
 import Services from "./Services";
+import Video from "./Video";
 
 const Homepage = () => {
   return (
@@ -8,6 +10,8 @@ const Homepage = () => {
       <Features />
       <Introductions />
       <Services />
+      <Info />
+      <Video />
     </div>
   );
 };

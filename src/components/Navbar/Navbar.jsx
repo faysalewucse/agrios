@@ -135,20 +135,24 @@ const Navbar = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="brightness-50 h-[85vh] w-full object-cover"
-              src={slider2}
-              alt="slider2"
-            />
-            <SliderText />
+            <div className="relative">
+              <img
+                className="brightness-50 h-[85vh] w-full object-cover"
+                src={slider2}
+                alt="slider2"
+              />
+              <SliderText />
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="brightness-50 h-[85vh] w-full object-cover"
-              src={slider3}
-              alt="slider3"
-            />
-            <SliderText />
+            <div className="relative">
+              <img
+                className="brightness-50 h-[85vh] w-full object-cover"
+                src={slider3}
+                alt="slider3"
+              />
+              <SliderText />
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
