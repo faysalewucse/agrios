@@ -8,7 +8,7 @@ import { RiCloseLine } from "react-icons/ri";
 import { BsCart3, BsMenuButton, BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -33,6 +33,7 @@ const navItems = [
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const swiper = useSwiper();
 
   return (
     <div className="relative">
@@ -85,7 +86,7 @@ const Navbar = () => {
             backgroundImage: `Url(${paper})`,
           }}
         >
-          <div className="container mx-auto md:flex items-center justify-between pt-5 pb-8">
+          <div className="max-w-7xl w-full px-5 mx-auto md:flex items-center justify-between pt-5 pb-8">
             <ul className="hidden md:flex items-center gap-5 text-white2">
               {navItems.map((item, index) => (
                 <Link
@@ -120,8 +121,7 @@ const Navbar = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          navigation={true}
-          modules={[EffectFade, Navigation, Pagination, Autoplay]}
+          modules={[EffectFade, Pagination, Autoplay]}
           className="mySwiper h-[85vh]"
         >
           <SwiperSlide>
