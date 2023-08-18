@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../../shared/Container";
 import Button from "../../components/Button";
 import TestimonialCard from "../../components/cards/TestimonialCard";
@@ -18,7 +17,7 @@ const Testimonials = () => {
         </p>
         <Button style="text-white">View All Testimonials</Button>
 
-        <div className="my-5">
+        <div className="my-5 lg:flex gap-5">
           <TestimonialCard />
           <TestimonialCard />
         </div>

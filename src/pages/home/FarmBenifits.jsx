@@ -1,17 +1,17 @@
 import farmer from "../../assets/farmer.webp";
 import martin from "../../assets/martin-luther-king.svg";
 import Container from "../../shared/Container";
-import { BsCheckLg, BsTriangle, BsTriangleFill } from "react-icons/bs";
+import { BsCheckLg, BsTriangleFill } from "react-icons/bs";
 import Button from "../../components/Button";
 
 const FarmBenifits = () => {
   return (
-    <div className="p-10">
+    <div className="p-10 relative">
       <Container>
-        <div className="lg:flex items-center gap-10">
+        <div className="lg:flex items-center gap-16">
           <div className="relative md:w-1/2">
             <div className="absolute -z-10 -left-5 top-1/2 -translate-y-1/2 h-3/4 bg-primary w-40"></div>
-            <div className="absolute -right-10 top-1/2 -translate-y-1/6 bg-secondary flex w-4/6 p-5 rounded-md">
+            <div className="absolute -right-10 top-1/2 -translate-y-1/6 bg-secondary flex md:w-4/6 p-5 rounded-md">
               <img className="w-24" src={martin} alt="martin" />
               <h6 className="text-white">Agriculture Professional Leader</h6>
               <BsTriangleFill className="rotate-180 text-secondary absolute text-4xl -bottom-7 right-0" />

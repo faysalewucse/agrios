@@ -7,7 +7,7 @@ const Button = ({ children, clickEvent, type, style }) => {
       type={type}
       onClick={clickEvent}
       className={clsx(
-        "text-white bg-primary w-fit py-2 px-6 rounded-md",
+        "text-white bg-primary w-fit py-4 px-8 rounded-md",
         style
       )}
     >

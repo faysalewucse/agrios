@@ -2,6 +2,7 @@ import FarmBenifits from "./FarmBenifits";
 import Features from "./Features";
 import Info from "./Info";
 import Introductions from "./Introductions";
+import NewsArticle from "./NewsArticle";
 import Projects from "./Projects";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
@@ -18,6 +19,7 @@ const Homepage = () => {
       <Projects />
       <Testimonials />
       <FarmBenifits />
+      <NewsArticle />
     </div>
   );
 };
