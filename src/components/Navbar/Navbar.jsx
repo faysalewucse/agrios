@@ -9,14 +9,9 @@ import { BsCart3, BsMenuButton, BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 // import required modules
-import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
+import { EffectFade, Pagination, Autoplay } from "swiper/modules";
 import { useState } from "react";
 import SocialMedia from "../SocialMedia";
 import SliderText from "../SliderText";
