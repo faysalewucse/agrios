@@ -3,6 +3,7 @@ import Features from "./Features";
 import Info from "./Info";
 import Introductions from "./Introductions";
 import NewsArticle from "./NewsArticle";
+import Partners from "./Partners";
 import Projects from "./Projects";
 import Services from "./Services";
 import Testimonials from "./Testimonials";
@@ -20,6 +21,7 @@ const Homepage = () => {
       <Testimonials />
       <FarmBenifits />
       <NewsArticle />
+      <Partners />
     </div>
   );
 };
