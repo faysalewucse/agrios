@@ -6,7 +6,10 @@ const Button = ({ children, clickEvent, type, style }) => {
     <button
       type={type}
       onClick={clickEvent}
-      className={clsx("bg-primary w-fit py-2 px-6 rounded-md", style)}
+      className={clsx(
+        "text-white bg-primary w-fit py-2 px-6 rounded-md",
+        style
+      )}
     >
       {children}
     </button>

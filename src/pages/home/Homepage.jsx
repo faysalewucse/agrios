@@ -1,3 +1,4 @@
+import FarmBenifits from "./FarmBenifits";
 import Features from "./Features";
 import Info from "./Info";
 import Introductions from "./Introductions";
@@ -16,6 +17,7 @@ const Homepage = () => {
       <Video />
       <Projects />
       <Testimonials />
+      <FarmBenifits />
     </div>
   );
 };
