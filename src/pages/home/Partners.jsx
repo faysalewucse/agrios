@@ -12,7 +12,7 @@ import Container from "../../shared/Container";
 
 const Partners = () => {
   return (
-    <div className="p-10 bg-cream">
+    <div className="py-16 bg-cream">
       <Container>
         <Swiper
           slidesPerView={2}
@@ -34,7 +34,7 @@ const Partners = () => {
             },
           }}
           modules={[Pagination, Autoplay]}
-          className="mySwiper mt-10"
+          className="mySwiper"
         >
           <SwiperSlide>
             <img className="w-52" src={p1} alt="partenr-1" />
