@@ -1,20 +1,11 @@
 import Brand from "../Brand";
 import paper from "../../assets/paper-bg.webp";
-import slider1 from "../../assets/slider1.jpg";
-import slider2 from "../../assets/slider2.jpg";
-import slider3 from "../../assets/slider3.jpg";
 import { RiCloseLine } from "react-icons/ri";
 
 import { BsCart3, BsMenuButton, BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
-
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-
-// import required modules
-import { EffectFade, Pagination, Autoplay } from "swiper/modules";
 import { useState } from "react";
 import SocialMedia from "../SocialMedia";
-import SliderText from "../SliderText";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -22,13 +13,12 @@ const navItems = [
   { label: "Services", path: "/" },
   { label: "Projects", path: "/" },
   { label: "News", path: "/" },
-  { label: "Shop", path: "/" },
+  { label: "Shop", path: "/shop" },
   { label: "Contact", path: "/" },
 ];
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const swiper = useSwiper();
 
   return (
     <div className="relative">
@@ -109,47 +99,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <Swiper
-          spaceBetween={30}
-          effect={"fade"}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          modules={[EffectFade, Pagination, Autoplay]}
-          className="mySwiper h-[85vh]"
-        >
-          <SwiperSlide>
-            <div className="relative">
-              <img
-                className="brightness-50 h-[85vh] w-full object-cover"
-                src={slider1}
-                alt="slider1"
-              />
-              <SliderText />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="relative">
-              <img
-                className="brightness-50 h-[85vh] w-full object-cover"
-                src={slider2}
-                alt="slider2"
-              />
-              <SliderText />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="relative">
-              <img
-                className="brightness-50 h-[85vh] w-full object-cover"
-                src={slider3}
-                alt="slider3"
-              />
-              <SliderText />
-            </div>
-          </SwiperSlide>
-        </Swiper>
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import Banner from "./Banner";
 import FarmBenifits from "./FarmBenifits";
 import Features from "./Features";
 import Info from "./Info";
@@ -12,6 +13,7 @@ import Video from "./Video";
 const Homepage = () => {
   return (
     <div className="bg-dark/5">
+      <Banner />
       <Features />
       <Introductions />
       <Services />

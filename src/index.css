@@ -67,3 +67,7 @@ small {
     transform: translateX(0);
   }
 }
+
+svg {
+  vertical-align: baseline;
+}

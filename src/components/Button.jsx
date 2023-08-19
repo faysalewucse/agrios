@@ -1,13 +1,15 @@
 import React from "react";
 import { clsx } from "clsx";
 
-const Button = ({ children, clickEvent, type, style }) => {
+const Button = ({ children, clickEvent, type, style, small }) => {
   return (
     <button
       type={type}
       onClick={clickEvent}
       className={clsx(
-        "text-white bg-primary w-fit py-4 px-8 rounded-md",
+        `text-white bg-primary w-fit rounded-md ${
+          small ? "py-2 px-4" : "py-4 px-8"
+        }`,
         style
       )}
     >

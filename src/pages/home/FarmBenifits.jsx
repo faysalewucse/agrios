@@ -6,7 +6,7 @@ import Button from "../../components/Button";
 
 const FarmBenifits = () => {
   return (
-    <div className="p-10 relative">
+    <div className="p-10 relative overflow-scroll">
       <Container>
         <div className="lg:flex items-center gap-16">
           <div className="relative md:w-1/2">
