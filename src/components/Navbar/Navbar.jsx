@@ -25,36 +25,38 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div
-        className={`md:hidden fixed top-0 -right-full h-screen transition-300 bg-dark2 z-50 p-10 ${
-          sidebarOpen && "-right-0 w-[80vw]"
+        className={`md:hidden absolute top-0 transition-300 bg-dark2 z-[999] ${
+          sidebarOpen ? "w-[80vw]" : "w-0"
         }`}
       >
         {sidebarOpen && (
-          <div>
-            <RiCloseLine
-              className="text-white text-4xl hover:text-primary transtion-200 ml-auto"
-              onClick={() => setSidebarOpen(false)}
-            />
-            <div className="flex flex-col justify-between">
-              <Brand white />
-              <div className="mt-20 flex flex-col gap-5">
-                {navItems.map((item, index) => (
-                  <Link
-                    key={index}
-                    to={item.path}
-                    className="text-white hover:text-white2 transition-all duration-200"
-                  >
-                    {item.label}
-                    <hr className="border w-full border-dark mt-5" />
-                  </Link>
-                ))}
+          <div className="p-10">
+            <div className="">
+              <RiCloseLine
+                className="text-white text-4xl hover:text-primary transtion-200 ml-auto"
+                onClick={() => setSidebarOpen(false)}
+              />
+              <div className="flex flex-col justify-between">
+                <Brand white />
+                <div className="mt-10 flex flex-col gap-5">
+                  {navItems.map((item, index) => (
+                    <Link
+                      key={index}
+                      to={item.path}
+                      className="text-white hover:text-white2 transition-all duration-200"
+                    >
+                      {item.label}
+                      <hr className="border w-full border-dark mt-5" />
+                    </Link>
+                  ))}
+                </div>
               </div>
-              <h1 className="my-5 text-white">
+              <p className="my-5 text-white">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Perferendis cumque culpa ex modi obcaecati nobis.
-              </h1>
+              </p>
+              <SocialMedia />
             </div>
-            <SocialMedia />
           </div>
         )}
       </div>
