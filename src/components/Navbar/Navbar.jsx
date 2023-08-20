@@ -63,26 +63,26 @@ const Navbar = () => {
         <div className="hidden md:block">
           <SocialMedia />
         </div>
-        <div className="lg:flex gap-5 hidden">
-          <div className="flex items-center gap-5">
+        <div className="lg:flex gap-2 hidden">
+          <div className="flex items-center gap-2">
             <FiPhoneCall className="text-primary text-4xl" />
-            <div>
+            <div className="flex flex-col">
               <small>Call Anytime</small>
-              <p>+98 000 9630</p>
+              <small>+98 000 9630</small>
             </div>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-2">
             <FiMail className="text-primary text-4xl" />
-            <div>
+            <div className="flex flex-col">
               <small>Send Email</small>
-              <p>ambed@agrios.com</p>
+              <small>ambed@agrios.com</small>
             </div>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-2">
             <MdLocationOn className="text-primary text-4xl" />
-            <div>
+            <div className="flex flex-col">
               <small>380 St Kilda Road</small>
-              <p>Melbourne, Australia</p>
+              <small>Melbourne, Australia</small>
             </div>
           </div>
         </div>

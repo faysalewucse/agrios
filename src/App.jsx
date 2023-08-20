@@ -7,6 +7,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ShopPage from "./pages/ShopPage/ShopPage";
+import { ConfigProvider } from "antd";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,21 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <ConfigProvider
+      theme={{
+        token: {
+          // Seed Token
+          colorPrimary: "#00b96b",
+
+          // Alias Token
+          colorBgContainer: "#f6ffed",
+        },
+      }}
+    >
+      <RouterProvider router={router} />
+    </ConfigProvider>
+  );
 };
 
 export default App;
