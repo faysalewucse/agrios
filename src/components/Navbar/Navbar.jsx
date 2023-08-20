@@ -1,6 +1,8 @@
 import Brand from "../Brand";
 import paper from "../../assets/paper-bg.webp";
 import { RiCloseLine } from "react-icons/ri";
+import { MdLocationOn } from "react-icons/md";
+import { FiMail, FiPhoneCall } from "react-icons/fi";
 
 import { BsCart3, BsMenuButton, BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -60,6 +62,29 @@ const Navbar = () => {
         <Brand />
         <div className="hidden md:block">
           <SocialMedia />
+        </div>
+        <div className="lg:flex gap-5 hidden">
+          <div className="flex items-center gap-5">
+            <FiPhoneCall className="text-primary text-4xl" />
+            <div>
+              <small>Call Anytime</small>
+              <p>+98 000 9630</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-5">
+            <FiMail className="text-primary text-4xl" />
+            <div>
+              <small>Send Email</small>
+              <p>ambed@agrios.com</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-5">
+            <MdLocationOn className="text-primary text-4xl" />
+            <div>
+              <small>380 St Kilda Road</small>
+              <p>Melbourne, Australia</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="relative">
