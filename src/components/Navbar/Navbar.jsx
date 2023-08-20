@@ -25,8 +25,8 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div
-        className={`md:hidden fixed top-0 right-0 translate-x-full h-screen transition-300 bg-dark2 z-50 p-10 ${
-          sidebarOpen && "-translate-x-0 w-[80vw]"
+        className={`md:hidden fixed top-0 -right-full h-screen transition-300 bg-dark2 z-50 p-10 ${
+          sidebarOpen && "-right-0 w-[80vw]"
         }`}
       >
         {sidebarOpen && (
