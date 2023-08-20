@@ -1,11 +1,17 @@
 import { Rate } from "antd";
 import React, { useState } from "react";
 import { BsCart, BsHeart } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 const ItemCard = ({ item }) => {
   const { img, name, price, rating } = item;
+  const navigate = useNavigate();
+
   return (
-    <div className="cursor-pointer">
+    <div
+      onClick={() => navigate("/shop/category/productId")}
+      className="cursor-pointer"
+    >
       <div className="group/product relative overflow-hidden">
         <img
           className="rounded-lg mb-2 hover:scale-105 transition-300 hover:-rotate-6"
