@@ -2,19 +2,15 @@ import slider1 from "../../assets/slider1.jpg";
 import slider2 from "../../assets/slider2.jpg";
 import slider3 from "../../assets/slider3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// import required modules
 import { EffectFade, Pagination, Autoplay } from "swiper/modules";
-
 import SliderText from "../../components/SliderText";
 
 const Banner = () => {
   return (
     <Swiper
       spaceBetween={30}
-      effect={"fade"}
       autoplay={{
-        delay: 2500,
+        delay: 10000,
         disableOnInteraction: false,
       }}
       modules={[EffectFade, Pagination, Autoplay]}

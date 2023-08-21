@@ -11,7 +11,7 @@ import SocialMedia from "../SocialMedia";
 
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "About", path: "/" },
+  { label: "About", path: "/about" },
   { label: "Services", path: "/" },
   { label: "Projects", path: "/" },
   { label: "News", path: "/" },

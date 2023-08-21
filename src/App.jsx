@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import ShopPage from "./pages/ShopPage/ShopPage";
 import { ConfigProvider } from "antd";
 import ProductDetails from "./pages/ShopPage/ProductDetails";
+import AboutPage from "./pages/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Homepage />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
       },
       {
         path: "/shop",
