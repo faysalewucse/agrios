@@ -10,7 +10,7 @@ const ProjectsPage = () => {
     <div>
       <PageBanner title={"PROJECTS"} path={"HOME / PROJECTS"} />
       <Container>
-        <div className="grid grid-cols-2 md:p-10 p-5 lg:p-20 gap-10">
+        <div className="grid md:grid-cols-2 grid-cols-1 md:p-10 p-5 lg:p-20 gap-10">
           <ProjectCard
             image={img3}
             projectName={"Ecological Farming"}
