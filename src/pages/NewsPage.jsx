@@ -7,6 +7,7 @@ import news5 from "../assets/news/news-06.webp";
 import NewsCard from "../components/cards/NewsCard";
 import { Pagination } from "antd";
 import { useState } from "react";
+import Container from "../shared/Container";
 
 export const newses = [
   {
@@ -63,18 +64,20 @@ const NewsPage = () => {
     <div>
       <PageBanner title={"OUR BLOGS"} path={"HOME / NEWS"} />
 
-      <div className="lg:p-20 md:p-10 p-5 grid grid-cols-1 md:grid-cols-2 gap-10">
-        {newses.slice((page - 1) * 4, page * 4).map((news, index) => (
-          <NewsCard key={index} news={news} />
-        ))}
-      </div>
-      <Pagination
-        className="w-fit p-5 mx-auto"
-        defaultCurrent={1}
-        onChange={(pageValue) => setPage(pageValue)}
-        defaultPageSize={9}
-        total={newses.length}
-      />
+      <Container>
+        <div className="lg:p-20 md:p-10 p-5 grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+          {newses.slice((page - 1) * 4, page * 4).map((news, index) => (
+            <NewsCard key={index} news={news} />
+          ))}
+        </div>
+        <Pagination
+          className="w-fit p-5 mx-auto"
+          defaultCurrent={1}
+          onChange={(pageValue) => setPage(pageValue)}
+          defaultPageSize={9}
+          total={newses.length}
+        />
+      </Container>
     </div>
   );
 };
