@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
+import { newses } from "../NewsPage";
+import NewsCard from "../../components/cards/NewsCard";
 
 const NewsArticle = () => {
   return (
@@ -35,114 +37,14 @@ const NewsArticle = () => {
           modules={[Pagination, Autoplay]}
           className="mySwiper mt-10"
         >
-          <SwiperSlide className="rounded-t-2xl bg-white shadow-md">
-            <div className="group/project relative h-80">
-              <img
-                className="rounded-t-2xl h-full object-cover"
-                src={img1}
-                alt="project"
-              />
-              <h6 className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-primary text-white w-fit mx-auto py-2 px-6 rounded-md">
-                5 July 2022
-              </h6>
-            </div>
-            <div className="p-10 text-center">
-              <div className="mb-5 flex items-center justify-center gap-5">
-                <div className="flex items-center gap-1">
-                  <BsPersonCircle className="bg-secondary text-white text-lg p-1 rounded-full" />
-                  <small>Kevin Martin</small>
-                </div>
-                <div className="flex items-center gap-1">
-                  <BsChatDotsFill className="text-secondary text-2xl p-1 rounded-full" />
-                  <small>0 Comment</small>
-                </div>
-              </div>
-              <Link className="hover:text-primary text-3xl font-semibold">
-                Bringing Food Production Back to Cities
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="rounded-t-2xl bg-white shadow-md">
-            <div className="group/project relative h-80">
-              <img
-                className="rounded-t-2xl h-full object-cover"
-                src={img3}
-                alt="project"
-              />
-              <h6 className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-primary text-white w-fit mx-auto py-2 px-6 rounded-md">
-                5 July 2022
-              </h6>
-            </div>
-            <div className="p-10 text-center">
-              <div className="mb-5 flex items-center justify-center gap-5">
-                <div className="flex items-center gap-1">
-                  <BsPersonCircle className="bg-secondary text-white text-lg p-1 rounded-full" />
-                  <small>Kevin Martin</small>
-                </div>
-                <div className="flex items-center gap-1">
-                  <BsChatDotsFill className="text-secondary text-2xl p-1 rounded-full" />
-                  <small>0 Comment</small>
-                </div>
-              </div>
-              <Link className="hover:text-primary text-3xl font-semibold">
-                Bringing Food Production Back to Cities
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="rounded-t-2xl bg-white shadow-md">
-            <div className="group/project relative h-80">
-              <img
-                className="rounded-t-2xl h-full object-cover"
-                src={img2}
-                alt="project"
-              />
-              <h6 className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-primary text-white w-fit mx-auto py-2 px-6 rounded-md">
-                5 July 2022
-              </h6>
-            </div>
-            <div className="p-10 text-center">
-              <div className="mb-5 flex items-center justify-center gap-5">
-                <div className="flex items-center gap-1">
-                  <BsPersonCircle className="bg-secondary text-white text-lg p-1 rounded-full" />
-                  <small>Kevin Martin</small>
-                </div>
-                <div className="flex items-center gap-1">
-                  <BsChatDotsFill className="text-secondary text-2xl p-1 rounded-full" />
-                  <small>0 Comment</small>
-                </div>
-              </div>
-              <Link className="hover:text-primary text-3xl font-semibold">
-                Bringing Food Production Back to Cities
-              </Link>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide className="rounded-t-2xl bg-white shadow-md">
-            <div className="group/project relative h-80">
-              <img
-                className="rounded-t-2xl h-full object-cover"
-                src={img1}
-                alt="project"
-              />
-              <h6 className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-primary text-white w-fit mx-auto py-2 px-6 rounded-md">
-                5 July 2022
-              </h6>
-            </div>
-            <div className="p-10 text-center">
-              <div className="mb-5 flex items-center justify-center gap-5">
-                <div className="flex items-center gap-1">
-                  <BsPersonCircle className="bg-secondary text-white text-lg p-1 rounded-full" />
-                  <small>Kevin Martin</small>
-                </div>
-                <div className="flex items-center gap-1">
-                  <BsChatDotsFill className="text-secondary text-2xl p-1 rounded-full" />
-                  <small>0 Comment</small>
-                </div>
-              </div>
-              <Link className="hover:text-primary text-3xl font-semibold">
-                Bringing Food Production Back to Cities
-              </Link>
-            </div>
-          </SwiperSlide>
+          {newses.map((news, index) => (
+            <SwiperSlide
+              key={index}
+              className="rounded-t-2xl bg-white shadow-md"
+            >
+              <NewsCard news={news} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

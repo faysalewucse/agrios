@@ -13,6 +13,8 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetails from "./pages/ProjectDetails";
+import NewsPage from "./pages/NewsPage";
+import NewsDetails from "./pages/NewsDetails";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <ProjectsPage />,
+      },
+      {
+        path: "/news",
+        element: <NewsPage />,
+      },
+      {
+        path: "/news/:newsId",
+        element: <NewsDetails />,
       },
       {
         path: "/project/:projectId",
