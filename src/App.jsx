@@ -11,6 +11,8 @@ import { ConfigProvider } from "antd";
 import ProductDetails from "./pages/ShopPage/ProductDetails";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import ProjectDetails from "./pages/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/projects",
+        element: <ProjectsPage />,
+      },
+      {
+        path: "/project/:projectId",
+        element: <ProjectDetails />,
       },
       {
         path: "/shop",
