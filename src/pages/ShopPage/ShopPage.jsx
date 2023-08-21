@@ -17,6 +17,14 @@ import item9 from "../../assets/items/red_grapes.jpg";
 import item10 from "../../assets/items/tomato.jpg";
 import ItemCard from "../../components/cards/ItemCard";
 
+export const categories = [
+  "Agriculture",
+  "Farming",
+  "Fresh Vegetables",
+  "Harvest",
+  "Organic Food",
+];
+
 const ShopPage = () => {
   const [min, setMin] = useState(20);
   const [max, setMax] = useState(500);
@@ -33,14 +41,6 @@ const ShopPage = () => {
   };
 
   const [category, setCategory] = useState("Agriculture");
-
-  const categories = [
-    "Agriculture",
-    "Farming",
-    "Fresh Vegetables",
-    "Harvest",
-    "Organic Food",
-  ];
 
   const items = [
     {
