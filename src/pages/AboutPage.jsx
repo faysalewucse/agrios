@@ -18,7 +18,7 @@ const AboutPage = () => {
     <div>
       <PageBanner title={"ABOUT"} path={"HOME / ABOUT"} />
       <Container>
-        <div className="p-20 lg:flex">
+        <div className="md:p-20 p-5 lg:flex">
           <div className="relative lg:ml-0 lg:w-1/2 ml-16">
             <img className="rounded-lg" src={about1} alt="about-01" />
             <img
@@ -70,7 +70,7 @@ const AboutPage = () => {
 
       {/* Farmers */}
       <Container>
-        <div className="p-20">
+        <div className="md:p-20 p-5">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
