@@ -1,8 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Button";
 
 const OfferCard = ({ image, icon, hover, afterHover }) => {
+  const navigate = useNavigate();
+
   return (
-    <div className={`${hover} relative`}>
+    <div
+      onClick={() => {
+        navigate("/service/Harvest");
+      }}
+      className={`${hover} relative cursor-pointer`}
+    >
       <div
         className={`relative flex items-center justify-center overflow-hidden h-96 rounded-xl`}
       >
@@ -17,7 +25,7 @@ const OfferCard = ({ image, icon, hover, afterHover }) => {
         Agriculture Products
       </div>
       <Button
-        style={`-z-10 absolute left-1/2 md:-translate-x-3 lg:-translate-x-5 -translate-x-2 translate-y-0 ${afterHover} text-white transition-300`}
+        style={`-z-10 absolute left-1/2 md:-translate-x-3 lg:-translate-x-1 -translate-x-2 translate-y-0 ${afterHover} text-white transition-300 w-fit`}
       >
         Read More
       </Button>

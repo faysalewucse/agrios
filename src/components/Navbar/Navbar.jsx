@@ -12,7 +12,7 @@ import SocialMedia from "../SocialMedia";
 const navItems = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
-  { label: "Services", path: "/" },
+  { label: "Services", path: "/services" },
   { label: "Projects", path: "/projects" },
   { label: "News", path: "/news" },
   { label: "Shop", path: "/shop" },
