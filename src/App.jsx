@@ -17,6 +17,10 @@ import NewsPage from "./pages/NewsPage";
 import NewsDetails from "./pages/NewsDetails";
 import ServicesPage from "./pages/ServicesPage";
 import ServiceDetails from "./pages/ServiceDetails";
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register";
+import { AuthProvider } from "./contexts/AuthContext";
+import PublicRoute from "./utils/PublicRoute";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +30,22 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Homepage />,
+      },
+      {
+        path: "/login",
+        element: (
+          <PublicRoute>
+            <Login />
+          </PublicRoute>
+        ),
+      },
+      {
+        path: "/register",
+        element: (
+          <PublicRoute>
+            <Register />
+          </PublicRoute>
+        ),
       },
       {
         path: "/about",
@@ -73,16 +93,18 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <ConfigProvider
-      theme={{
-        token: {
-          colorPrimary: "#00b96b",
-          colorBgContainer: "#f6ffed",
-        },
-      }}
-    >
-      <RouterProvider router={router} />
-    </ConfigProvider>
+    <AuthProvider>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorPrimary: "#00b96b",
+            colorBgContainer: "#f6ffed",
+          },
+        }}
+      >
+        <RouterProvider router={router} />
+      </ConfigProvider>
+    </AuthProvider>
   );
 };
 

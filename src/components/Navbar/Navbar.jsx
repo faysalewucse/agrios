@@ -5,9 +5,11 @@ import { MdLocationOn } from "react-icons/md";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 
 import { BsCart3, BsMenuButton, BsSearch } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import SocialMedia from "../SocialMedia";
+import Button from "../Button";
+import { useAuth } from "../../contexts/AuthContext";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -20,8 +22,10 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { currentUser } = useAuth();
 
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="relative">
       <div
@@ -123,6 +127,19 @@ const Navbar = () => {
                   1
                 </p>
               </div>
+              {currentUser ? (
+                <Button
+                  style={"bg-red-500"}
+                  small
+                  clickEvent={() => navigate("/login")}
+                >
+                  Logout
+                </Button>
+              ) : (
+                <Button small clickEvent={() => navigate("/login")}>
+                  Login
+                </Button>
+              )}
             </div>
           </div>
         </div>

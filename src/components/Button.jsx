@@ -7,8 +7,8 @@ const Button = ({ children, clickEvent, type, style, small }) => {
       type={type}
       onClick={clickEvent}
       className={clsx(
-        `text-white bg-primary w-fit rounded-md ${
-          small ? "py-2 px-4" : "py-4 px-8"
+        `text-white hover:bg-secondary transition-300 bg-primary w-fit rounded-md ${
+          small ? "py-2 px-4 text-xs" : "py-4 px-8"
         }`,
         style
       )}
