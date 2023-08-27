@@ -5,7 +5,6 @@ import { MdFileUpload } from "react-icons/md";
 import { useAuth } from "../contexts/AuthContext";
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast";
-import Swal from "sweetalert2";
 
 export const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -39,26 +38,32 @@ export const Register = () => {
         const photoURL = response.data.data.display_url;
         signup(email, password, name, photoURL);
 
-        axios
-          .post(`${import.meta.env.VITE_BASE_API_URL}/user`, {
-            email,
-            name,
-            photoURL,
-            address,
-            gender,
-            phoneNumber,
-            role: "student",
-          })
-          .then((response) => {
-            if (response.status === 200) {
-              Swal.fire(
-                "Welcome!",
-                "You registered to Ninja School Successfully!",
-                "success"
-              );
-              setLoading(false);
-            }
-          });
+        Swal.fire(
+          "Welcome!",
+          "You registered to Agrios Successfully!",
+          "success"
+        );
+        setLoading(false);
+        // axios
+        //   .post(`${import.meta.env.VITE_BASE_API_URL}/user`, {
+        //     email,
+        //     name,
+        //     photoURL,
+        //     address,
+        //     gender,
+        //     phoneNumber,
+        //     role: "student",
+        //   })
+        //   .then((response) => {
+        //     if (response.status === 200) {
+        //       Swal.fire(
+        //         "Welcome!",
+        //         "You registered to Agrios Successfully!",
+        //         "success"
+        //       );
+        //       setLoading(false);
+        //     }
+        //   });
       }
     } catch (error) {
       setLoading(false);

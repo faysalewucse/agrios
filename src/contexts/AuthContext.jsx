@@ -31,50 +31,50 @@ export function AuthProvider({ children }) {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);
 
-      // getUsersData from Database if not found save to database
-      if (user) {
-        await axios
-          .get(`${import.meta.env.VITE_BASE_API_URL}/users/${user.email}`)
-          .then(({ data: userData }) => {
-            if (userData) {
-              setCurrentUser(userData);
-            } else {
-              const newUser = {
-                name: user.displayName,
-                email: user.email,
-                photoURL: user.photoURL,
-                address: "",
-                gender: "",
-                phoneNumber: "",
-                role: "student",
-              };
-              axios
-                .post(`${import.meta.env.VITE_BASE_API_URL}/user`, newUser)
-                .then((response) => {
-                  if (response.status === 200) {
-                    setCurrentUser(newUser);
-                  }
-                });
-            }
-          });
-      } else {
-        setCurrentUser(user);
-      }
+      // // getUsersData from Database if not found save to database
+      // if (user) {
+      //   await axios
+      //     .get(`${import.meta.env.VITE_BASE_API_URL}/users/${user.email}`)
+      //     .then(({ data: userData }) => {
+      //       if (userData) {
+      //         setCurrentUser(userData);
+      //       } else {
+      //         const newUser = {
+      //           name: user.displayName,
+      //           email: user.email,
+      //           photoURL: user.photoURL,
+      //           address: "",
+      //           gender: "",
+      //           phoneNumber: "",
+      //           role: "student",
+      //         };
+      //         axios
+      //           .post(`${import.meta.env.VITE_BASE_API_URL}/user`, newUser)
+      //           .then((response) => {
+      //             if (response.status === 200) {
+      //               setCurrentUser(newUser);
+      //             }
+      //           });
+      //       }
+      //     });
+      // } else {
+      //   setCurrentUser(user);
+      // }
 
       // TODO: update it to by storing access token to cookie
       // get jwt token and save it to local storage
       // TODO: change the URL
-      if (user) {
-        axios
-          .post(`${import.meta.env.VITE_BASE_API_URL}/jwt`, {
-            email: user.email,
-          })
-          .then((response) => {
-            localStorage.setItem("access_token", response.data.token);
-          });
-      } else {
-        localStorage.removeItem("access_token");
-      }
+      // if (user) {
+      //   axios
+      //     .post(`${import.meta.env.VITE_BASE_API_URL}/jwt`, {
+      //       email: user.email,
+      //     })
+      //     .then((response) => {
+      //       localStorage.setItem("access_token", response.data.token);
+      //     });
+      // } else {
+      //   localStorage.removeItem("access_token");
+      // }
       setLoading(false);
     });
 
