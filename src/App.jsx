@@ -21,6 +21,9 @@ import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 import { AuthProvider } from "./contexts/AuthContext";
 import PublicRoute from "./utils/PublicRoute";
+import { DashboardLayout } from "./layouts/DashboardLayout";
+import PrivateRoute from "./utils/PrivateRoute";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -87,6 +90,28 @@ const router = createBrowserRouter([
         path: "/shop/category/:productId",
         element: <ProductDetails />,
       },
+    ],
+  },
+  {
+    path: "dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "/dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        ),
+      },
+      // {
+      //   path: "route",
+      //   element: (
+      //     <StudentRoute>
+      //       <SelectedClasses />
+      //     </StudentRoute>
+      //   ),
+      // },
     ],
   },
 ]);

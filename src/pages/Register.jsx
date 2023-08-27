@@ -34,6 +34,7 @@ export const Register = () => {
         }`,
         formdata
       );
+
       if (response?.data?.status === 200) {
         const photoURL = response.data.data.display_url;
         signup(email, password, name, photoURL);
@@ -44,6 +45,7 @@ export const Register = () => {
           "success"
         );
         setLoading(false);
+
         // axios
         //   .post(`${import.meta.env.VITE_BASE_API_URL}/user`, {
         //     email,
