@@ -22,7 +22,7 @@ const navItems = [
 ];
 
 const Navbar = () => {
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();
@@ -128,11 +128,7 @@ const Navbar = () => {
                 </p>
               </div>
               {currentUser ? (
-                <Button
-                  style={"bg-red-500"}
-                  small
-                  clickEvent={() => navigate("/login")}
-                >
+                <Button style={"bg-red-500"} small clickEvent={logout}>
                   Logout
                 </Button>
               ) : (
