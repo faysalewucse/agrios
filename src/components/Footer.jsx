@@ -1,6 +1,5 @@
 import { FaLeaf, FaPhoneAlt } from "react-icons/fa";
-import { BiLogoGmail } from "react-icons/bi";
-import { MdLocationOn } from "react-icons/md";
+import { MdEmail, MdLocationOn } from "react-icons/md";
 import Brand from "./Brand";
 import SocialMedia from "./SocialMedia";
 import UnderLine from "./UnderLine";
@@ -93,15 +92,17 @@ const Footer = () => {
             <UnderLine />
             <p className="text-secondary mt-5 flex items-center gap-2">
               <FaPhoneAlt />
-              666 888 0000
+              801-380-6649
             </p>
             <p className="text-secondary mt-5 flex items-center gap-2">
-              <BiLogoGmail />
-              needhelp@company.com
+              <MdEmail className="" />
+              <p className="w-40">joseph@bartholomewdevelopment.com</p>
             </p>
             <p className="text-secondary mt-5 flex items-center gap-2">
-              <MdLocationOn />
-              80 broklyn golden street line New York, USA
+              <MdLocationOn className="" />
+              <p className="w-40">
+                2138 Pleasant Valley Road, Vinton, OH 45686
+              </p>
             </p>
             <div className="flex items-center mt-5">
               <input
@@ -117,7 +118,7 @@ const Footer = () => {
         </div>
       </Container>
       <div className="text-center md:text-left bg-dark2 p-5 md:flex items-center justify-between ">
-        <p>© All Copyright 2022 by TPLabs.co</p>
+        <p>© All Copyright 2023 by Bartholomew</p>
         <div className="flex items-center gap-1 justify-center md:justify-start">
           <Link className="text-cream/50 hover:text-cream">Terms of Use</Link>
           <hr className="border border-cream/50 h-4 w-0" />
