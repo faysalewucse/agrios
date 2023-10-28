@@ -75,23 +75,24 @@ const Navbar = () => {
             <FiPhoneCall className="text-primary text-4xl" />
             <div className="flex flex-col">
               <small>Call Anytime</small>
-              <small>+98 000 9630</small>
+              <small>801-380-6649</small>
             </div>
           </div>
           <div className="flex items-center gap-2">
             <FiMail className="text-primary text-4xl" />
             <div className="flex flex-col">
               <small>Send Email</small>
-              <small>ambed@agrios.com</small>
+              <small>joseph@bartholomewdevelopment.com</small>
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          {/* address commented */}
+          {/* <div className="flex items-center gap-2">
             <MdLocationOn className="text-primary text-4xl" />
             <div className="flex flex-col">
               <small>380 St Kilda Road</small>
               <small>Melbourne, Australia</small>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="relative">
@@ -103,7 +104,8 @@ const Navbar = () => {
             backgroundImage: `Url(${paper})`,
           }}
         >
-          <div className="max-w-7xl w-full px-5 mx-auto md:flex items-center justify-between pt-5 pb-8">
+          {/* navbar */}
+          {/* <div className="max-w-7xl w-full px-5 mx-auto md:flex items-center justify-between pt-5 pb-8">
             <ul className="hidden md:flex items-center gap-5 text-white2">
               {navItems.map((item, index) => (
                 <Link
@@ -138,7 +140,7 @@ const Navbar = () => {
                 </Button>
               )}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
