@@ -98,12 +98,6 @@ const Footer = () => {
               <MdEmail className="" />
               <p className="w-40">joseph@bartholomewdevelopment.com</p>
             </p>
-            <p className="text-secondary mt-5 flex items-center gap-2">
-              <MdLocationOn className="" />
-              <p className="w-40">
-                2138 Pleasant Valley Road, Vinton, OH 45686
-              </p>
-            </p>
             <div className="flex items-center mt-5">
               <input
                 type="text"
