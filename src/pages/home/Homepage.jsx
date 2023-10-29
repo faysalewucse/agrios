@@ -12,7 +12,7 @@ import Video from "./Video";
 
 const Homepage = () => {
   return (
-    <div className="bg-dark/5">
+    <div className="bg-dark/5 overflow-hidden">
       <Banner />
       <Features />
       <Introductions />
