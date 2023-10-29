@@ -5,7 +5,7 @@ import toast from 'react-hot-toast'
 export const Modal = ({setIsOpen}) => {
     const sendEmail=(e)=>{
         e.preventDefault()
-        emailjs.sendForm("service_3zbggaq","template_kap1494",e.target,"0-W8xw21Q1_C79BP1")
+        emailjs.sendForm("service_3zbggaq","template_xx27yjb",e.target,"0-W8xw21Q1_C79BP1")
         .then(result=>{
             if(result.text==="OK"){
                 toast.success("Successfully sent an email to Bartholomew Development LLC")
