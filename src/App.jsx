@@ -24,6 +24,7 @@ import PublicRoute from "./utils/PublicRoute";
 import { DashboardLayout } from "./layouts/DashboardLayout";
 import PrivateRoute from "./utils/PrivateRoute";
 import Dashboard from "./pages/dashboard/Dashboard";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([
   {
@@ -129,6 +130,10 @@ const App = () => {
       >
         <RouterProvider router={router} />
       </ConfigProvider>
+      <Toaster
+      position="top-center"
+      reverseOrder={false}
+      />
     </AuthProvider>
   );
 };

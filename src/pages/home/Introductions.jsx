@@ -3,8 +3,10 @@ import img2 from "../../assets/rounded2.png";
 import Container from "../../shared/Container";
 import Button from "../../components/Button";
 import { Modal } from "../../shared/Modal";
+import { useState } from "react";
 
 const Introductions = () => {
+  const [isOpen,setIsOpen]=useState(true)
   return (
     <Container>
       <div className="p-5 my-10 flex md:flex-row md:justify-center items-center flex-col gap-5">
@@ -54,10 +56,20 @@ const Introductions = () => {
           Understanding your financial standing is crucial for any business. FARMS Systems offers in-depth Profit & Loss reports, automated invoicing, and a chart of accounts that gives you a full picture of your financial health.
           </p>
           <p className="my-3 text-sm">In a nutshell, FARMS Systems isn't just another farm management tool; it's the future of efficient, profitable farming.</p>
-          <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}><Button>Contact Us</Button></button>
+          <button 
+          className="btn" 
+          onClick={()=>{
+            setIsOpen(true)
+            if(isOpen){
+              document.getElementById('my_modal_1').showModal()
+            }
+          }}><Button>Contact Us</Button>
+          </button>
         </div>
       </div>
-      <Modal/>
+      {
+        isOpen && <Modal setIsOpen={setIsOpen} />
+      }
     </Container>
   );
 };
