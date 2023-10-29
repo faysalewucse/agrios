@@ -56,7 +56,20 @@ const NewsDetails = () => {
 
             <h4 className="font-semibold">{news.title}</h4>
             <p className="my-10 text-justify">
-              {news.details}
+            The world of agriculture is rapidly evolving, and with it comes the necessity for reliable, comprehensive farm management software. Enter FARMS Systems, a platform designed to provide modern farmers and ranchers with the tools they need to thrive in today's competitive landscape.
+
+From its all-encompassing asset management feature that allows users to monitor everything from livestock health to equipment efficiency, to its robust accounting features designed to provide unparalleled financial insights, FARMS Systems is setting a new standard in farm management software.
+
+Automated Processes
+One of the most revolutionary aspects of FARMS Systems is its capacity for automation. Imagine running low on feed stock and having a Purchase Order automatically generated. These automated processes not only save time but also offer incredible accuracy.
+
+Streamlined Labor Management
+Managing labor can be a herculean task for any farming operation. FARMS Systems simplifies this through its well-structured labor and task management features. Whether it's managing employees, contractors, or even work orders, everything can be handled within the platform.
+
+Financial Oversight
+Understanding your financial standing is crucial for any business. FARMS Systems offers in-depth Profit & Loss reports, automated invoicing, and a chart of accounts that gives you a full picture of your financial health.
+
+In a nutshell, FARMS Systems isn't just another farm management tool; it's the future of efficient, profitable farming.
             </p>
 
             <Divider />
