@@ -3,7 +3,7 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 import Brand from "./Brand";
 import SocialMedia from "./SocialMedia";
 import UnderLine from "./UnderLine";
-import img from "../assets/services/service-01.webp";
+import img from "../assets/logo_bg.jpg";
 
 import { Link } from "react-router-dom";
 import { BsSend } from "react-icons/bs";
@@ -40,18 +40,19 @@ const Footer = () => {
   return (
     <div className="bg-dark text-white">
       <Container>
-        <div className="p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+        <div className="p-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
           <div>
             <Brand white />
-            <p className="my-5">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore,
-              voluptatibus!
+            <p className="my-5 text-sm">
+              © 2023 FARMS All Rights Reserved. Designed & Developed By Bartholomew Development LLC
             </p>
             <div className="text-dark">
               <SocialMedia />
             </div>
           </div>
-          <div>
+
+          {/* explore */}
+          {/* <div>
             <h6 className="font-semibold mb-2">Explore</h6>
             <UnderLine />
             <ul className="mt-5">
@@ -62,8 +63,10 @@ const Footer = () => {
                 </div>
               ))}
             </ul>
-          </div>
-          <div>
+          </div> */}
+
+          {/* news */}
+          {/* <div>
             <h6 className="font-semibold mb-2">News</h6>
             <UnderLine />
             <div>
@@ -86,7 +89,25 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+          </div> */}
+
+          {/* news */}
+          <div>
+            <h6 className="font-semibold mb-2">Website</h6>
+            <UnderLine />
+            <div>
+              <a target="_blank" href="https://bartholomewdevelopment.com/" className="mt-5 flex items-center gap-3">
+                <img className="w-20 h-20 rounded-lg object-cover" src={img} alt="news" />
+                <div className="flex-1">
+                  <p className="text-lg font-semibold">
+                    Bartholomew Development LLC
+                  </p>
+                  <p className="text-secondary">July 5, 2022</p>
+                </div>
+              </a>
+            </div>
           </div>
+          {/* Contact  */}
           <div>
             <h6 className="font-semibold mb-2">Contact</h6>
             <UnderLine />
@@ -98,7 +119,7 @@ const Footer = () => {
               <MdEmail className="" />
               <p className="w-40">joseph@bartholomewdevelopment.com</p>
             </p>
-            <div className="flex items-center mt-5">
+            {/* <div className="flex items-center mt-5">
               <input
                 type="text"
                 className="p-3 rounded-l-xl w-full"
@@ -107,7 +128,7 @@ const Footer = () => {
               <button className="bg-primary p-4 rounded-r-xl">
                 <BsSend />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </Container>

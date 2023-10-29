@@ -108,7 +108,7 @@ const Navbar = () => {
         >
           {/* comming soon */}
           <div className="bg-gray-200 h-[50px] w-full flex justify-center items-center">
-            <p className="font-cursive text-3xl text-green-700">comming soon...</p>
+            <p className="font-cursive text-3xl text-green-700">coming soon...</p>
           </div>
           {/* navbar */}
           {/* <div className="max-w-7xl w-full px-5 mx-auto md:flex items-center justify-between pt-5 pb-8">
