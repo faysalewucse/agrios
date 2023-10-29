@@ -96,13 +96,12 @@ const Footer = () => {
             <h6 className="font-semibold mb-2">Website</h6>
             <UnderLine />
             <div>
-              <a target="_blank" href="https://bartholomewdevelopment.com/" className="mt-5 flex items-center gap-3">
+              <a target="_blank" href="https://bartholomewdevelopment.com/" className="mt-5 flex gap-3">
                 <img className="w-20 h-20 rounded-lg object-cover" src={img} alt="news" />
                 <div className="flex-1">
                   <p className="text-lg font-semibold">
                     Bartholomew Development LLC
                   </p>
-                  <p className="text-secondary">July 5, 2022</p>
                 </div>
               </a>
             </div>
@@ -132,14 +131,14 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-      <div className="text-center md:text-left bg-dark2 p-5 md:flex items-center justify-between ">
+      {/* <div className="text-center md:text-left bg-dark2 p-5 md:flex items-center justify-between ">
         <p>© All Copyright 2023 by Bartholomew</p>
         <div className="flex items-center gap-1 justify-center md:justify-start">
           <Link className="text-cream/50 hover:text-cream">Terms of Use</Link>
           <hr className="border border-cream/50 h-4 w-0" />
           <Link className="text-cream/50 hover:text-cream">Privacy Policy</Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

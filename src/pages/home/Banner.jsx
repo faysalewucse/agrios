@@ -26,7 +26,7 @@ const Banner = () => {
           <SliderText />
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <div className="relative">
           <img
             className="brightness-50 h-[85vh] w-full object-cover"
@@ -35,7 +35,7 @@ const Banner = () => {
           />
           <SliderText />
         </div>
-      </SwiperSlide>
+      </SwiperSlide> */}
       <SwiperSlide>
         <div className="relative">
           <img

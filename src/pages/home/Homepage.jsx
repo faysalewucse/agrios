@@ -16,14 +16,14 @@ const Homepage = () => {
       <Banner />
       <Features />
       <Introductions />
-      <Services />
-      <Info />
-      <Video />
-      <Projects />
-      <Testimonials />
-      <FarmBenifits />
-      <NewsArticle />
-      <Partners />
+      {/* <Services /> */}
+      {/* <Info /> */}
+      {/* <Video /> */}
+      {/* <Projects /> */}
+      {/* <Testimonials /> */}
+      {/* <FarmBenifits /> */}
+      {/* <NewsArticle /> */}
+      {/* <Partners /> */}
     </div>
   );
 };

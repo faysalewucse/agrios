@@ -2,6 +2,7 @@ import img from "../../assets/slider1.jpg";
 import img2 from "../../assets/rounded2.png";
 import Container from "../../shared/Container";
 import Button from "../../components/Button";
+import { Modal } from "../../shared/Modal";
 
 const Introductions = () => {
   return (
@@ -53,9 +54,10 @@ const Introductions = () => {
           Understanding your financial standing is crucial for any business. FARMS Systems offers in-depth Profit & Loss reports, automated invoicing, and a chart of accounts that gives you a full picture of your financial health.
           </p>
           <p className="my-3 text-sm">In a nutshell, FARMS Systems isn't just another farm management tool; it's the future of efficient, profitable farming.</p>
-          <Button style="text-white">Discover More</Button>
+          <button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}><Button>Contact Us</Button></button>
         </div>
       </div>
+      <Modal/>
     </Container>
   );
 };
