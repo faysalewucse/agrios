@@ -15,7 +15,7 @@ export const newses = [
     publishedDate: "5 July, 2022",
     writer: "Kevin Martin",
     comments: 1,
-    title: "Bringing Food Production Back To Cities",
+    title: "Why FARMS Systems Is a Game-Changer for Modern Agriculture",
     details:
       "Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available, but the majority have alteration in some injected or words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you",
   },
@@ -24,7 +24,7 @@ export const newses = [
     publishedDate: "5 July, 2022",
     writer: "Kevin Martin",
     comments: 1,
-    title: "Bringing Food Production Back To Cities",
+    title: "Why FARMS Systems Is a Game-Changer for Modern Agriculture",
     details:
       "Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available, but the majority have alteration in some injected or words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you",
   },
@@ -33,7 +33,7 @@ export const newses = [
     publishedDate: "5 July, 2022",
     writer: "Kevin Martin",
     comments: 1,
-    title: "Bringing Food Production Back To Cities",
+    title: "Why FARMS Systems Is a Game-Changer for Modern Agriculture",
     details:
       "Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available, but the majority have alteration in some injected or words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you",
   },
@@ -42,7 +42,7 @@ export const newses = [
     publishedDate: "5 July, 2022",
     writer: "Kevin Martin",
     comments: 1,
-    title: "Bringing Food Production Back To Cities",
+    title: "Why FARMS Systems Is a Game-Changer for Modern Agriculture",
     details:
       "Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available, but the majority have alteration in some injected or words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you",
   },
@@ -51,7 +51,7 @@ export const newses = [
     publishedDate: "5 July, 2022",
     writer: "Kevin Martin",
     comments: 1,
-    title: "Bringing Food Production Back To Cities",
+    title: "Why FARMS Systems Is a Game-Changer for Modern Agriculture",
     details:
       "Lorem ipsum dolor sit amet, cibo mundi ea duo, vim exerci phaedrum. There are many variations of passages of Lorem Ipsum available, but the majority have alteration in some injected or words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you",
   },

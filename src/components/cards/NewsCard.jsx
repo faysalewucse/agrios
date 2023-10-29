@@ -15,7 +15,7 @@ const NewsCard = ({ news }) => {
           {publishedDate}
         </h6>
       </div>
-      <div className="p-10 text-center">
+      <div className="py-10 text-center">
         <div className="mb-5 flex items-center justify-center gap-5">
           <div className="flex items-center gap-1">
             <BsPersonCircle className="bg-secondary text-white text-lg p-1 rounded-full" />
@@ -28,7 +28,7 @@ const NewsCard = ({ news }) => {
         </div>
         <Link
           to="/news/newsId"
-          className="hover:text-primary text-3xl font-semibold"
+          className="hover:text-primary text-xl font-semibold"
         >
           {title}
         </Link>
