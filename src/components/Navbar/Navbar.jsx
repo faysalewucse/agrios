@@ -75,7 +75,7 @@ const Navbar = () => {
             <FiPhoneCall className="text-primary text-4xl" />
             <div className="flex flex-col">
               <small>Call Anytime</small>
-              <small>801-380-6649</small>
+              <small>740-688-8251</small>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -85,7 +85,6 @@ const Navbar = () => {
               <small>joseph@bartholomewdevelopment.com</small>
             </div>
           </div>
-          
 
           {/* address commented */}
           {/* <div className="flex items-center gap-2">
@@ -108,7 +107,9 @@ const Navbar = () => {
         >
           {/* comming soon */}
           <div className="bg-gray-200 h-[50px] w-full flex justify-center items-center">
-            <p className="font-cursive text-3xl text-green-700">Coming fall 2025...</p>
+            <p className="font-cursive text-3xl text-green-700">
+              Coming fall 2025...
+            </p>
           </div>
           {/* navbar */}
           {/* <div className="max-w-7xl w-full px-5 mx-auto md:flex items-center justify-between pt-5 pb-8">

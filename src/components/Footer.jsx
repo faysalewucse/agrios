@@ -44,7 +44,8 @@ const Footer = () => {
           <div>
             <Brand white />
             <p className="my-5 text-sm">
-              © 2023 FARMS All Rights Reserved. Designed & Developed By Bartholomew Development LLC
+              © 2023 FARMS All Rights Reserved. Designed & Developed By
+              Bartholomew Development LLC
             </p>
             <div className="text-dark">
               <SocialMedia />
@@ -96,8 +97,16 @@ const Footer = () => {
             <h6 className="font-semibold mb-2">Website</h6>
             <UnderLine />
             <div>
-              <a target="_blank" href="https://bartholomewdevelopment.com/" className="mt-5 flex gap-3">
-                <img className="w-20 h-20 rounded-lg object-cover" src={img} alt="news" />
+              <a
+                target="_blank"
+                href="https://bartholomewdevelopment.com/"
+                className="mt-5 flex gap-3"
+              >
+                <img
+                  className="w-20 h-20 rounded-lg object-cover"
+                  src={img}
+                  alt="news"
+                />
                 <div className="flex-1">
                   <p className="text-lg font-semibold">
                     Bartholomew Development LLC
@@ -112,7 +121,7 @@ const Footer = () => {
             <UnderLine />
             <p className="text-secondary mt-5 flex items-center gap-2">
               <FaPhoneAlt />
-              801-380-6649
+              740-688-8251
             </p>
             <p className="text-secondary mt-5 flex items-center gap-2">
               <MdEmail className="" />
